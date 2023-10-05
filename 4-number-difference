@@ -1,7 +1,5 @@
 public Integer diff(Integer a, Integer b) {
-    Integer value1 = 5;
-    Integer value2 = 2
-    Integer diff = value1 - value2;
+    Integer diff = a - b;
     Integer abs = math.abs(diff);
     return abs;
     
