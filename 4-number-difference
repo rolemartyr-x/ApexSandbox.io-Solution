@@ -3,5 +3,7 @@ public Integer diff(Integer a, Integer b) {
     system.debug(diff);
     
     public static Integer abs(Integer diff);
+
+    return diff
     
 }
