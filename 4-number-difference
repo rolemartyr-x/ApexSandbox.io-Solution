@@ -1,4 +1,4 @@
 public Integer diff(Integer a, Integer b) {
-    integer = 5 - 2;
-    ABS(integer);
+    Integer diff = 5 - 2;
+    ABS(diff);
 }
