@@ -1,7 +1,9 @@
 public String aOrAn(String word) {
     if (word.startsWith('a') || word.startsWith('e') || word.startsWith('i') || word.startsWith('o') || word.startsWith('u')) {
-        return true;
+        String article = 'a ' + word;
+        return article;
     } else {
-        return false;
+        String article = 'an ' + word;
+        return article;
     }
 }
