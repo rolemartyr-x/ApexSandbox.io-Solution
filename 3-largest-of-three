@@ -7,5 +7,5 @@ public static Integer findLargest(Integer num1, Integer num2, Integer num3) {
 
     numbers.sort();
 
-    return numbers(2);
+    return numbers[2];
 }
