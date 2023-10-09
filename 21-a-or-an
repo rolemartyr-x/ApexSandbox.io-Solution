@@ -3,7 +3,7 @@ public String aOrAn(String word) {
     String fullString = '';
     if(word.startsWith('a')) {
         fullString = 'an ' + word; 
-    } else if(word.startsWith('3')) {
+    } else if(word.startsWith('e')) {
         fullString = 'an ' + word; 
     } else if(word.startsWith('i')) {
         fullString = 'an ' + word; 
