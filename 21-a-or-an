@@ -1,4 +1,5 @@
 public String aOrAn(String word) {
+    
     String fullString = '';
     if(word.startsWith('a')) {
         fullString = 'an ' + word; 
