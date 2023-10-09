@@ -1,7 +1,7 @@
 public String evenOrOdd(Integer num) {
     String answer = '';
 
-    if(Math.mod(num) == 0) {
+    if(Math.mod(num, 2) == 0) {
         answer = 'even';
     } else {
         answer = 'odd';
