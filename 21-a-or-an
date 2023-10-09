@@ -1,15 +1,5 @@
 public String aOrAn(String word) {
-    Boolean startsWithA = word.startsWithIgnoreCase('a');
-    Boolean startsWithA = word.startsWithIgnoreCase('e');
-    Boolean startsWithA = word.startsWithIgnoreCase('i');
-    Boolean startsWithA = word.startsWithIgnoreCase('o');
-    Boolean startsWithA = word.startsWithIgnoreCase('u');
-
-    if(startsWithA == true) {
-        String fullString = 'an ' + word;
-    } else {
-        String fullString = 'a ' + word;
+    if(word.startsWith('a')) {
+        return 'a ' + word;
     }
-
-    return fullString;
 }
