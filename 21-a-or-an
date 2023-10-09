@@ -1,9 +1,9 @@
 public String aOrAn(String word) {
-    Boolean startsWithA = word.startsWith('a');
-    Boolean startsWithA = word.startsWith('e');
-    Boolean startsWithA = word.startsWith('i');
-    Boolean startsWithA = word.startsWith('o');
-    Boolean startsWithA = word.startsWith('u');
+    Boolean startsWithA = word.startsWithIgnoreCase('a');
+    Boolean startsWithA = word.startsWithIgnoreCase('e');
+    Boolean startsWithA = word.startsWithIgnoreCase('i');
+    Boolean startsWithA = word.startsWithIgnoreCase('o');
+    Boolean startsWithA = word.startsWithIgnoreCase('u');
 
     if(startsWithA == true) {
         String article = 'an ';
