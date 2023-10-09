@@ -1,9 +1,16 @@
 public String aOrAn(String word) {
-    if (word.startsWith('a') || word.startsWith('e') || word.startsWith('i') || word.startsWith('o') || word.startsWith('u')) {
-        String article = 'a ' + word;
-        return article;
+    Boolean startsWithA = word.startswith('a');
+    Boolean startsWithA = word.startswith('e');
+    Boolean startsWithA = word.startswith('i');
+    Boolean startsWithA = word.startswith('o');
+    Boolean startsWithA = word.startswith('u');
+
+    if(startsWithA == true) {
+        String article = 'an ';
     } else {
-        String article = 'an ' + word;
-        return article;
+        String article = 'a ';
     }
+
+    String fullString = article + word;
+    return fullString;
 }
