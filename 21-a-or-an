@@ -6,11 +6,10 @@ public String aOrAn(String word) {
     Boolean startsWithA = word.startsWithIgnoreCase('u');
 
     if(startsWithA == true) {
-        String article = 'an ';
+        String fullString = 'an ' + word;
     } else {
-        String article = 'a ';
+        String fullString = 'a ' + word;
     }
 
-    String fullString = article + word;
     return fullString;
 }
