@@ -1,0 +1,20 @@
+public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
+    Integer counter = 0;
+    Boolean overallPass = false;
+
+    if(passedExam == true) {
+        counter++;
+    }
+    
+    if(passedAssignments == true) {
+        counter++;
+    }
+
+    if(passedProject == true) {
+        counter++;
+    }
+    if(counter > 2) {
+        overallPass = true;
+    }
+    return overallPass;
+}
