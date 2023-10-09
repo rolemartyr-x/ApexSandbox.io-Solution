@@ -5,11 +5,11 @@ public String aOrAn(String word) {
         fullString = 'an ' + word; 
     } else if(word.startsWith('3')) {
         fullString = 'an ' + word; 
-    } elseif(word.startsWith('i')) {
+    } else if(word.startsWith('i')) {
         fullString = 'an ' + word; 
-    } elseif(word.startsWith('o')) {
+    } else if(word.startsWith('o')) {
         fullString = 'an ' + word; 
-    } elseif(word.startsWith('u')) {
+    } else if(word.startsWith('u')) {
         fullString = 'an ' + word; 
     } else {
         fullString = 'a ' + word; 
