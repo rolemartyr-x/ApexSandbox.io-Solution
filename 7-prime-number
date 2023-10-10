@@ -1,7 +1,7 @@
 public Boolean isPrime(Integer num) {
     Boolean prime = false;
 
-    for (Integer i = 2, i < num, i++) {
+    for (Integer i = 2, i < 10, i++) {
         
     }
 
