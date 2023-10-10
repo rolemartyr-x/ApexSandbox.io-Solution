@@ -1,0 +1,15 @@
+public String nameFromEmail(String email) {
+    String firstName = '';
+    String lastName = '';
+    String fullName = '';
+
+    String = subString1 = email.substringBefore('@');
+    firstName = subString1.subStringBefore('.');
+    lastName = subString1.subStringAfter('.');
+
+    firstName = firstName.capitalize();
+    lastName = lastName.capitalize();
+    fullName = firstName + ' ' + lastName;
+
+    return fullName;
+}
