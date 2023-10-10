@@ -1,0 +1,35 @@
+public Boolean companionPlants(String plant1, String plant2) {
+    Boolean companions = false;
+    
+    if(plant1 == 'lettuce') {
+        if(plant2 == 'cucumbers' || plant2 == 'onions') {
+            companions = true;
+        }
+    }
+
+    if(plant1 == 'cucumbers') {
+        if(plant2 == 'lettuce') {
+            companions = true;
+        }
+    }
+
+    if(plant1 == 'onions') {
+        if(plant2 == 'lettuce' || plant2 == 'carrots' || plant2 == 'tomatoes') {
+            companions = true;
+        }
+    }
+
+    if(plant1 == 'carrots') {
+        if(plant2 == 'onions') {
+            companions = true;
+        }
+    }
+
+    if(plant1 == 'tomatoes') {
+        if(plant2 == 'onions') {
+            companions = true;
+        }
+    }
+
+    return companions;
+}
