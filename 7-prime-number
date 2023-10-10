@@ -1,14 +1,9 @@
 public Boolean isPrime(Integer num) {
     Boolean prime = false;
-    
+
     for (Integer i = 2, i < num, i++) {
-        if(Math.mod(num, i) != 0) {
-            prime = false;
-        } else if (num == 2) {
-            prime = true;
-        } else {
-            prime = true;
-        }
+        
     }
+
     return prime;
 }
