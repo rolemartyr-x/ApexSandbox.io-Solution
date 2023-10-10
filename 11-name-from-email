@@ -3,7 +3,7 @@ public String nameFromEmail(String email) {
     String lastName = '';
     String fullName = '';
 
-    String = subString1 = email.substringBefore('@');
+    String subString1 = email.substringBefore('@');
     firstName = subString1.subStringBefore('.');
     lastName = subString1.subStringAfter('.');
 
