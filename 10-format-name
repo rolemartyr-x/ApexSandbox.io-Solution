@@ -1,11 +1,11 @@
 public String formatName(String firstName, String lastName) {
     String fullName = '';
     
-    if(lastName != null && firstName != null){
+    if(lastName != null && lastName != '' && firstName != null && firstName != ''){
         fullName = lastName + ', ' + firstName;
-    } else if(lastName == null && firstName != null) {
+    } else if((lastName == null || lastName = '') && (firstName != null && firstName != '') {
         fullName = firstName;
-    } else if(lastName != null && firstName == null) {
+    } else if((lastName != null && lastName != '') && (firstName == null || firstName == '') {
         fullName = lastName;
     }
 
