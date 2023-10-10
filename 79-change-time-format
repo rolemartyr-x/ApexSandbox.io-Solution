@@ -1,0 +1,16 @@
+public String changeTimeFormat(String strTime) {
+    String hour = strTime.subStringBefore(':');
+    String minute = strTime.subStringAfter(':');
+    String suffix = '';
+    Integer hourLarge = valueOf(hour);
+    if(hour > 12) {
+        suffix = 'PM';
+        
+        hourLarge = hourLarge - 12;
+    } else {
+        suffix = 'AM';
+    }
+
+    String time = hourLarge + ':' + minute + ' ' + suffix;
+
+}
