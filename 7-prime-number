@@ -1,8 +1,8 @@
 public Boolean isPrime(Integer num) {
     Boolean prime = false;
 
-    for (Integer i = 2, i < 10, i++) {
-        
+    for (Integer i = 2, i < num, i++) {
+        system.debug('whats going on?');
     }
 
     return prime;
