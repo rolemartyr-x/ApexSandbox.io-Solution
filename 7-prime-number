@@ -1,7 +1,7 @@
 public Boolean isPrime(Integer num) {
     Boolean prime = false;
 
-    for(Integer i = 2; i < num - 1; i++) {
+    for(Integer i = 2; i <= num - 1; i++) {
         if(Math.mod(num, i) == 0) {
             prime = false;
         }
