@@ -14,4 +14,31 @@ public String changeTimeFormat(String strTime) {
     String newTime = hourLarge + ':' + minute + ' ' + suffix;
     return newTime;
 
+}public String changeTimeFormat(String strTime) {
+    Integer hour = Integer.valueOf(strTime.subStringBefore(':'));
+    String minute = strTime.subStringAfter(':');
+    String suffix = '';
+    Integer hourLarge = Integer.valueOf(hour);
+    system.debug('Hour: ' + hour); 
+    system.debug('minute: ' + minute); 
+    system.debug('suffix: ' + suffix); 
+    system.debug('hourLarge: ' + hourLarge); 
+    if(hour >= 12) {
+        if(hour == 12){
+            suffix = 'AM';
+        } else {
+            suffix = 'PM';
+		}
+        
+        hourLarge = hourLarge - 12;
+    } else {
+        suffix = 'AM';
+    }
+
+    String newTime = hourLarge + ':' + minute + ' ' + suffix;
+    system.debug('newtime: ' + newTime); 
+    return newTime;
+
 }
+
+changeTimeFormat('12:05');
