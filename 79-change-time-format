@@ -40,5 +40,3 @@ public String changeTimeFormat(String strTime) {
     return newTime;
 
 }
-
-changeTimeFormat('12:05');
