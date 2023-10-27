@@ -12,9 +12,10 @@ public String changeTimeFormat(String strTime) {
             suffix = 'AM';
         } else {
             suffix = 'PM';
+            hourLarge = hourLarge - 12;
 		}
         
-        hourLarge = hourLarge - 12;
+        
     } else {
         suffix = 'AM';
     }
