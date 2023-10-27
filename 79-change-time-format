@@ -20,7 +20,7 @@ public String changeTimeFormat(String strTime) {
     }
     
     
-    String newTime = hour + ':' + minute + ' ' + suffix;
+    String newTime = hourStr + ':' + minute + ' ' + suffix;
     
     return newTime;
 
