@@ -13,11 +13,20 @@ public String changeTimeFormat(String strTime) {
         suffix = 'PM';
     } else if (hour > 12) {
         hour = hour - 12;
-        hourStr = '0' + String.valueOf(hour);
-        suffix = 'PM';
+        if (hour >= 10) {
+                    suffix = 'PM';
+
+        } else {
+            hourStr = '0' + String.valueOf(hour);
+            suffix = 'PM';
+        }
     } else {
+        if (hour >= 10) {
+            suffix = 'AM';
+        } else{
         hourStr = '0' + String.valueOf(hour);
         suffix = 'AM';
+        }
     }
     
     
