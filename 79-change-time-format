@@ -11,7 +11,7 @@ public String changeTimeFormat(String strTime) {
         hour = hour - 12;
         suffix = 'PM';
     } else {
-        hourStr = '0' + valueOf(hour);
+        hourStr = '0' + String.valueOf(hour);
         suffix = 'AM';
     }
     
