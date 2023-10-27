@@ -2,7 +2,7 @@ public String changeTimeFormat(String strTime) {
     Integer hour = Integer.valueOf(strTime.subStringBefore(':'));
     String minute = strTime.subStringAfter(':');
     String suffix = '';
-    String hourStr = ''
+    String hourStr = '';
     
     if(hour == 0) {
         hour = 12;
