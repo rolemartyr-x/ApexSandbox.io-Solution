@@ -2,25 +2,20 @@ public String changeTimeFormat(String strTime) {
     Integer hour = Integer.valueOf(strTime.subStringBefore(':'));
     String minute = strTime.subStringAfter(':');
     String suffix = '';
-    Integer hourLarge = Integer.valueOf(hour);
     system.debug('Hour: ' + hour); 
     system.debug('minute: ' + minute); 
     system.debug('suffix: ' + suffix); 
     system.debug('hourLarge: ' + hourLarge); 
-    if(hour >= 12) {
-        if(hour == 12){
-            suffix = 'AM';
-        } else {
-            suffix = 'PM';
-            hourLarge = hourLarge - 12;
-		}
-        
-        
+    if(hour > 12) {
+        suffix = 'PM';
+        hour = hour - 12;
+    } else if (hour == 12) {
+        suffix = 'AM';
     } else {
         suffix = 'AM';
     }
 
-    String newTime = hourLarge + ':' + minute + ' ' + suffix;
+    String newTime = hour + ':' + minute + ' ' + suffix;
     system.debug('newtime: ' + newTime); 
     return newTime;
 
