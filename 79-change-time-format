@@ -2,15 +2,18 @@ public String changeTimeFormat(String strTime) {
     Integer hour = Integer.valueOf(strTime.subStringBefore(':'));
     String minute = strTime.subStringAfter(':');
     String suffix = '';
+    String hourStr = ''
     
     if(hour == 0) {
         hour = 12;
+        hourStr = valueOf(hour);
         suffix = 'AM';
     } else if (hour > 12) {
         hour = hour - 12;
+        hourStr = valueOf(hour);
         suffix = 'PM';
     } else {
-        String hour = '0' + valueOf(hour);
+        hourStr = '0' + valueOf(hour);
         suffix = 'AM';
     }
     
